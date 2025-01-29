@@ -10,6 +10,6 @@ let HobbySchema = new schemaObj({
     versionKey: false 
 });
 
-let HobbyModel = mongooseObj.model("hobby",HobbySchema);
+let HobbyModel = mongooseObj.model("hobby", HobbySchema);
 module.exports = HobbyModel;
 

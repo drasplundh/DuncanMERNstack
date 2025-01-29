@@ -1,7 +1,7 @@
 
 
 const Initial_State = {
-    Product : {
+    Hobby : {
         name : "",
     },
     Hobbies : [],
@@ -15,9 +15,20 @@ let HobbyReducer = (state = Initial_State, action)=>{
     switch (action.type) {
         
         case "STORE.ADD_HOBBY" :
-            //..state - products[] and defaultProduct
-            return { ...state, Products : action.payload.products } 
+             console.log("REDUCER: action.payload.Hobbies: ", action.payload.hobby)
+            return { ...state, Hobbies : action.payload.hobby }
 
+            /*
+                action.payload.hobby is defined in HobbyActions - see below
+                    return {
+                        type : "STORE.ADD_HOBBY",
+                        payload : {hobby}
+                    }
+
+                Hobbies is the array declared here, and {hobby} is the payload value being passed/applied to the Hobbies array
+                action.payload.hobby is how we access it
+
+            */
         case "SET_LOADING" :
             return { ...state, Loading : action.payload.loading }
 

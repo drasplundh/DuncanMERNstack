@@ -15,7 +15,7 @@ router.post("/saveHobby",(req, res)=>{
     })
 
     router.get("/getHobbies", (req, res) => {
-        hobbyObjSchema.find()
+        HobbyDataModel.find()
         .then((hobbies) => {
             res.send(hobbies);
         }).catch((error) => {
