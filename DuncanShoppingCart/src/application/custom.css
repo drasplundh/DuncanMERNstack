@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Noto Serif";
+    background-color: #f2f2f2;
+   /* #2D0605 dark brown */
+   /* #F7DD72 yellow */
+   /* #A5C882 light green */
+
+}
+
+.small-x {
+    all: unset;
+    padding: 5px;
+    background: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #c4c4c4;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: background-color .5s, color .5s;
+}
+
+.small-x:hover {
+    background-color: #2D0605;
+    color: gray;
+    
+}
+
+.navbar {
+    background-color: #A5C882;
+    font-family: "Noto Serif";
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-link {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 1s, background-color 1s;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    color: #A5C882;
+    background-color: white;
+}
+
+.nav-info {
+    padding: 10px;
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        padding: 10px;
+}
+
+.checkout-box {
+    border-radius: 5px;
+    border: 5px solid #2D0605;
+}
+
+.checkout-item {
+    margin-top: 15px;
+    height: 15rem;
+    border-top: 2rem solid #A5C882;
+    background-color: #e6e6e6;
+}
+img {
+    height: auto;
+    width: 125px;
+}
+
+.checkout-summary-box {
+
+    border-radius: 5px;
+    margin-left: 15px;
+    border: 5px solid #2D0605;
+    height: 75% !important;
+
+}
+
+.summary-item {
+    border-bottom: 2px solid gray;
+    padding: 20px;
+}
+
+.custom-btn {
+    background-color: #A5C882;
+}
+
+p {
+    font-size: 20px;
+}
